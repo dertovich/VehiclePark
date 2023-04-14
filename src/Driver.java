@@ -1,13 +1,9 @@
 public class Driver {
     private String category;
     private String name;
-    // Приватный статический экземпляр класса Driver
     private static Driver instance;
 
-    // Приватный конструктор
-    private Driver() {
-        // Инициализация объекта Driver
-    }
+    private Driver() {}
 
     // Публичный метод для получения экземпляра класса Driver
     public static synchronized Driver getInstance() {
@@ -17,7 +13,6 @@ public class Driver {
         return instance;
     }
 
-    // Геттер и сеттер для поля category
     public String getCategory() {
         return category;
     }
