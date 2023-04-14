@@ -5,7 +5,6 @@ public class Driver {
 
     private Driver() {}
 
-    // Публичный метод для получения экземпляра класса Driver
     public static synchronized Driver getInstance() {
         if (instance == null) {
             instance = new Driver();
